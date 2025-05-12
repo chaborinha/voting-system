@@ -2,10 +2,8 @@
 
 function sessao_ativa()
 {
-    if(PHP_SESSION_ACTIVE == false)
-    {
-        return false;
+    if (session_status() === PHP_SESSION_ACTIVE) {
+        return true;
     }
-
-    return true;
+    return false;
 }
