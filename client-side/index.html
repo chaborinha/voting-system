@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <title>Sistema de Votação</title>
+</head>
+
+<body>
+    <form action="http://localhost/voting-system/server-side/api/login.php" method="POST" class="form_login">
+
+        <label for="nome">nome:</label>
+        <input type="text" class="nome" id="nome">
+        <br>
+        <label for="senha">senha:</label>
+        <input type="text" class="senha" id="senha">
+
+        <div class="g-recaptcha" data-sitekey="6Lc5FzYrAAAAAPtW6yml9ApjlUA2AbmR65ghhbf5"></div>
+        <br />
+        <input type="submit" value="logar">
+
+    </form>
+
+    <script src="assets/js/app.js" type="module"></script>
+</body>
+
+</html>
